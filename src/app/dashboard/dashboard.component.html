@@ -1,0 +1,51 @@
+<div>
+    <table class="table">
+        <caption>Details of Popular 5 cities in UK</caption>
+        <thead>
+            <tr>
+                <th data-type="text" scope="col" role="columnheader" id="identity">Id</th>
+                <th data-type="text" scope="col" role="columnheader" id="cityName">City Name</th>
+                <th data-type="text" scope="col" role="columnheader" id="temperature">Temperature Celcius</th>
+                <th data-type="text" scope="col" role="columnheader" id="sunriseTime">Sun rise Time (IST)</th>
+                <th data-type="text" scope="col" role="columnheader" id="sunSetTime">Sun set Time (IST)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-info">
+                <td>{{cityDetailsLondon.Id}}</td>
+                <td class="link"><a (click)="cityDetails($event)">{{cityDetailsLondon.CityName}}</a></td>
+                <td>{{cityDetailsLondon.Temperature}}</td>
+                <td>{{cityDetailsLondon.SunriseTime}}</td>
+                <td>{{cityDetailsLondon.SunSetTime}}</td>
+            </tr>
+            <tr>
+                <td>{{cityDetailsManchester.Id}}</td>
+                <td class="link"><a (click)="cityDetails($event)">{{cityDetailsManchester.CityName}}</a></td>
+                <td>{{cityDetailsManchester.Temperature}}</td>
+                <td>{{cityDetailsManchester.SunriseTime}}</td>
+                <td>{{cityDetailsManchester.SunSetTime}}</td>
+            </tr>
+            <tr class="table-info">
+                <td>{{cityDetailsCambridge.Id}}</td>
+                <td class="link"><a (click)="cityDetails($event)">{{cityDetailsCambridge.CityName}}</a></td>
+                <td>{{cityDetailsCambridge.Temperature}}</td>
+                <td>{{cityDetailsCambridge.SunriseTime}}</td>
+                <td>{{cityDetailsCambridge.SunSetTime}}</td>
+            </tr>
+            <tr>
+                <td>{{cityDetailsOxford.Id}}</td>
+                <td class="link"><a (click)="cityDetails($event)">{{cityDetailsOxford.CityName}}</a></td>
+                <td>{{cityDetailsOxford.Temperature}}</td>
+                <td>{{cityDetailsOxford.SunriseTime}}</td>
+                <td>{{cityDetailsOxford.SunSetTime}}</td>
+            </tr>
+            <tr class="table-info">
+                <td>{{cityDetailsBristol.Id}}</td>
+                <td class="link"><a (click)="cityDetails($event)">{{cityDetailsBristol.CityName}}</a></td>
+                <td>{{cityDetailsBristol.Temperature}}</td>
+                <td>{{cityDetailsBristol.SunriseTime}}</td>
+                <td>{{cityDetailsBristol.SunSetTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
